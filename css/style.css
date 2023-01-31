@@ -1,0 +1,112 @@
+*{
+	font-family: sans-serif;
+
+}
+.nvbtn{
+	color: white;
+	background-color: black;
+	border-color: black !important;
+
+}
+.nvbtn span{
+	color: rgb(150,150,150);
+}
+.nvbtn:hover{
+	color: black;
+	background-color: white !important;
+}
+.nv{
+	display: flex;
+	justify-content: space-around ;
+	column-gap: 30px;
+	align-items: center;
+
+}
+.fixed{
+	position: fixed;
+	width: 100%;
+}
+.home{
+	text-align: center;
+	grid-row-gap: 20px;
+	background-image: url(Background.png);
+	padding-top: 150px;
+	padding-bottom: 0;
+}
+.home *{
+	margin: 7px 0;
+}
+.home h1 {
+	font-weight: 800;
+	font-size: 45px;
+	margin: 15px 0;
+	color: black;
+}
+.home p{
+	color: rgb(100,100,100);
+}
+.home img{
+	width: 80%;
+	margin-bottom: 0;
+	margin-top: 50px;
+}
+.second{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 100px;
+}
+.second img{
+	width: 400px;
+
+
+}
+.second div{
+	width: 500px;
+}
+
+@media (max-width: 992px){
+	.nv{
+	display: grid;
+	grid-row-gap: 20px;
+}
+	.second{
+	width: 90%;
+	display: flex;
+	grid-row-gap: 80px;
+	flex-direction:column-reverse;
+	margin: auto;
+	align-content: center;
+	justify-content: center;
+	margin-top: 100px;
+}
+.second img{
+	width: 80%;
+}
+.second div{
+	width: 80%;
+}
+}
+footer{
+	margin: 50px auto;
+	display: flex;
+	width: 80%;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+footer span{
+	padding: 0 10px;
+}
+@media (max-width: 650px){
+	footer{
+		width: 100%;
+		justify-content: space-around;
+	}
+}
+@media (max-width: 480px){
+	footer span{
+		display: block;
+		margin-top: 10px;
+	}
+}
